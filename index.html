@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <style>
+        .dark {
+            background-color: rgb(53, 58, 58);
+            max-width: 500px;
+        }
+
+        .light {
+            background-color: rgb(184, 194, 184);
+            max-width: 55%;
+        }
+    </style>
+    <div id="main">
+    </div>
+    <script type="text/babel">
+
+        const textclass = "light";
+
+
+
+        let mystyle = {
+            backgroundColor: "yellow",
+            fontFamily: "Verdana",
+            border: "2px solid black",
+            borderRadius: "20px",
+            marginLeft: "30%",
+           maxWidth: "fit-content"
+
+        }
+        mystyle.backgroundColor = "white";
+
+        let mystyle2 = {
+
+            fontFamily: "Verdana",
+            border: "2px solid white",
+            borderRadius: " 15px",
+            marginLeft: "30%",
+            maxWidth: "fit-content"
+        }
+        let styleimg = {
+            display: "inline",
+            inlineBlock: "block",
+            margin:"20px",
+            maxWidth:"300px"
+        }
+
+        let div = document.getElementById("main");
+
+        const root = ReactDOM.createRoot(div);
+        root.render(
+            <div className={textclass}>
+                <h1 style={mystyle}>nikolaev</h1>
+                <h2 style={mystyle2}>Ukraine</h2>
+                <h2 style={mystyle2}>
+                    27 августа1789</h2>
+                <img style={styleimg} src="./Mykolaiv._Russian_Drama_Theatre.jpg" alt=""></img>
+                <img style={styleimg} src="./Здание_Горкома_в_Николаеве.jpg" alt=""></img>
+                <img style={styleimg} src="./Музей_суднобудування_та_флоту,_Миколаїв.jpg" alt=""></img>
+            </div>
+        )
+
+
+
+
+    </script>
+</body>
+
+</html>
