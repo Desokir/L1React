@@ -19,11 +19,12 @@
 
         .light {
             background-color: rgb(184, 194, 184);
-            max-width: 55%;
+            max-width: 75%;
         }
     </style>
     <div id="main">
     </div>
+    <div id="musicgroup"></div>
     <script type="text/babel">
 
         const textclass = "light";
@@ -35,7 +36,7 @@
             fontFamily: "Verdana",
             border: "2px solid black",
             borderRadius: "20px",
-            marginLeft: "30%",
+            marginLeft: "10%",
            maxWidth: "fit-content"
 
         }
@@ -46,13 +47,13 @@
             fontFamily: "Verdana",
             border: "2px solid white",
             borderRadius: " 15px",
-            marginLeft: "30%",
+            marginLeft: "10%",
             maxWidth: "fit-content"
         }
         let styleimg = {
             display: "inline",
             inlineBlock: "block",
-            margin:"20px",
+            marginLeft:"150px",
             maxWidth:"300px"
         }
 
@@ -61,16 +62,50 @@
         const root = ReactDOM.createRoot(div);
         root.render(
             <div className={textclass}>
-                <h1 style={mystyle}>nikolaev</h1>
-                <h2 style={mystyle2}>Ukraine</h2>
+                <h1 style={mystyle}>Грокаем алгоритмы</h1>
+                <h2 style={mystyle2}>Автор: Адитья Бхаргава</h2>
                 <h2 style={mystyle2}>
-                    27 августа1789</h2>
-                <img style={styleimg} src="./Mykolaiv._Russian_Drama_Theatre.jpg" alt=""></img>
-                <img style={styleimg} src="./Здание_Горкома_в_Николаеве.jpg" alt=""></img>
-                <img style={styleimg} src="./Музей_суднобудування_та_флоту,_Миколаїв.jpg" alt=""></img>
+                    Жанр: Популярная наука, Самообучение, Программирование (Алгоритмы).</h2>
+                 
+                    <h2 style={mystyle2}>
+                       Русское издание (Питер, 2-е изд.): 352 страницы.</h2>
+                    <p style={mystyle2}>
+            «Грокаем алгоритмы» Адитьи Бхаргавы — это увлекательное иллюстрированное пособие, которое делает изучение алгоритмов доступным для начинающих благодаря простым объяснениям, забавным иллюстрациям и примерам из повседневной жизни, фокусируясь на практическом применении, а не сложной математике, и охватывает темы от сортировки и поиска до графов и сжатия данных, обучая сравнению их эффективности.</p>
+                <img style={styleimg} src="./bhargava_final_.png" alt=""></img>
+            
             </div>
         )
 
+        
+         
+        
+        let musicgroup = document.getElementById("musicgroup");
+
+        const group = ReactDOM.createGroup(div);
+        group.render(
+            <div className={textclass}>
+                <h1 style={mystyle}>Триагрутрика</h1>
+                <h2 style={mystyle2}> рэп-группа из Челябинска, основанная в 2004 году. С 2011 по 2016 годы</h2>
+                <h2 style={mystyle2}>
+                   Jahmal (Артём Аверин) — MC (2004—н. в.)
+                    Vibe (Евгений Вибе) — MC (2004—н. в.)</h2>
+                 
+                    <h2 style={mystyle2}>alboms
+                       2023 — «Будни» (Jahmal, Vibe)
+                       2008 — «Нелегализованные / ZдНА»
+2010 — «Вечерний Челябинск»
+2011 — «Т.Г.К.липсис»
+2014 — «Базирование»
+2016 — «TGK AK47» (совместно с АК-47)
+2018 — «By Triagrutrika, Pt. 1»</h2>
+                    <p style={mystyle2}>
+            «Грокаем алгоритмы» Адитьи Бхаргавы — это увлекательное иллюстрированное пособие, которое делает изучение алгоритмов доступным для начинающих благодаря простым объяснениям, забавным иллюстрациям и примерам из повседневной жизни, фокусируясь на практическом применении, а не сложной математике, и охватывает темы от сортировки и поиска до графов и сжатия данных, обучая сравнению их эффективности.</p>
+                <img style={styleimg} src="./завантаження.jfif" alt=""></img>
+                <img style={styleimg} src="./завантаження(1).jfif" alt=""></img>
+            
+            </div>
+        )
+        Триагрутрика
 
 
 
