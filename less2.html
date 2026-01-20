@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <style>
+
+    </style>
+    <header id="header">
+
+    </header>
+    <div id="main">
+
+    </div>
+    <div id="aside">
+
+    </div>
+    <script type="text/babel">
+        const mystyle = {
+
+            width: '20%',
+        }
+        const mystyleHeader = {
+            border: '1px solid black',
+            display: 'flex',
+            alignIitems: 'center',
+            justifyContent: 'spaceBetween',
+            gap: '15%'
+        }
+
+        let header = document.getElementById("header");
+        const root = ReactDOM.createRoot(header);
+        root.render(
+            <div style={mystyleHeader}>
+                <img src="./ROZETKA-Logo-L3-B-RGB.png" alt="" style={mystyle}></img>
+
+                <h1 style={mystyle}> Rozetka </h1>
+                <nav style={mystyle}>
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        )
+
+        const styleAside = {
+            width: "40%",
+            maxWidth: '200px',
+            paddingLeft: "0.5rem",
+            marginLeft: "0.5rem",
+            float: "left",
+            fontStyle: "bold",
+            border: '1px solid black',
+            marginTop: '20px',
+
+        };
+
+        let div = document.getElementById("aside");
+        const root2 = ReactDOM.createRoot(div);
+        root2.render(
+            <div>
+                <aside style={styleAside}>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, debitis esse consectetur dolores minus laborum ducimus accusantium odit. Mollitia praesentium ducimus culpa ex explicabo delectus voluptatem officiis facere nihil voluptatum? Atque sed architecto consectetur perspiciatis nemo. Ut nulla minima dolorem voluptates expedita fugiat. Laboriosam necessitatibus et aspernatur placeat! Deleniti laborum culpa earum temporibus animi, vero ullam modi nihil sint ipsam sit! Eligendi dicta culpa inventore asperiores debitis commodi, rerum magni quod tempore nulla, sed aliquam odio quas nesciunt nisi praesentium ad ipsam rem. Asperiores est assumenda impedit explicabo facere ipsam quo quae placeat deserunt iure? Explicabo quasi omnis nulla amet tempora sed. Error fugit assumenda ea architecto totam quisquam nam voluptas unde fugiat animi nesciunt placeat quos iusto ut, tenetur nisi. Laboriosam dolorum doloribus incidunt placeat quidem autem ab, qui quisquam sunt distinctio suscipit recusandae tempora id consequuntur atque ipsam!</p>
+                </aside>
+            </div>
+        )
+           
+
+    
+        function card1() {
+            const styleCards = {
+                width: '300px',
+                border: ' 1px solid #ddd',
+                overflow: 'hidden',
+                margin: '20px',
+                backgroundColor: '#fff',
+                fontFamily: 'sans-serif',
+            }
+
+            return <div>
+                <img src="./still-life-books-versus-technology_23-2150062920" alt=""></img>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus reprehenderit delectus at ratione placeat numquam vitae, quisquam aut recusandae dolores.</p>
+            </div>
+
+        }
+         function card2() {
+            const styleCards = {
+                width: '300px',
+                border: ' 1px solid #ddd',
+                overflow: 'hidden',
+                margin: '20px',
+                backgroundColor: '#fff',
+                fontFamily: 'sans-serif',
+            }
+
+            return <div>
+                <img src="./pexels-joshsorenson-1714208" alt=""></img>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus reprehenderit delectus at ratione placeat numquam vitae, quisquam aut recusandae dolores.</p>
+            </div>
+
+        }
+        let main = document.getElementById("main");
+        const root3 = ReactDOM.createRoot(div1);
+        root3.render(<>
+            <card1/>
+        <card2/>
+        </>
+
+        )
+
+    </script>
+
+
+</body>
+
+</html>
